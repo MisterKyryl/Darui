@@ -5,10 +5,13 @@
 	<title>Святкові Подарункові Набори Від ТМ "DARUI"</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240923234203">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20240924150916">
 	<link rel="shortcut icon" href="favicon.ico">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -32,7 +35,7 @@
 						</nav>
 					</div>
 					<a data-da=".menu__body,767.98,1" href="tel:0800300729" class="header__phone">0 800 300 729</a>
-					<a href="#" data-da=".menu__body,767.98,2" class="header__button button">Завантажити каталог</a>
+					<a href="#" data-popup="#popup" data-da=".menu__body,767.98,2" class="header__button button">Завантажити каталог</a>
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 				</div>
 			</div>
@@ -41,15 +44,19 @@
 			<section class="page__main main">
 				<div class="main__container">
 					<div class="main__body body-main">
-						<h1 class="body-main__title title">
-							святкові подарункові
-							набори від ТМ “DARUI”
+						<h1 data-watch data-watch-once class="body-main__title title">
+							<span>
+								святкові подарункові
+								набори від ТМ “DARUI”
+							</span>
 						</h1>
-						<p class="body-main__text">
-							Даруйте незабутні моменти разом із DARUI! Ми створюємо унікальні подарункові набори, наповнені солодощами, що підкреслюють
-							важливі моменти у житті ваших близьких та колег.
+						<p data-watch data-watch-once class="body-main__text text--animation">
+							<span>
+								Даруйте незабутні моменти разом із DARUI! Ми створюємо унікальні подарункові набори, наповнені солодощами, що підкреслюють
+								важливі моменти у житті ваших близьких та колег.
+							</span>
 						</p>
-						<a href="#" class="body-main__button button">Завантажити каталог</a>
+						<a href="#" data-popup="#popup" class="body-main__button button">Завантажити каталог</a>
 					</div>
 					<div class="main__image image-main">
 						<img class="image-main__picture" src="img/main/01.webp" alt="Image">
@@ -58,7 +65,8 @@
 			</section>
 			<section class="page__about about">
 				<div class="about__container">
-					<h2 class="about__title title title--center">Чому варто обрати нас</h2>
+					<h2 data-watch data-watch-once data-watch-margin="-200px" class="about__title title title--center"><span>Чому варто обрати нас</span>
+					</h2>
 					<div class="about__body body-about">
 						<div class="body-about__item item-about">
 							<div class="item-about__header">
@@ -124,7 +132,7 @@
 						<img src="img/who-are-we/01.webp" class="who-are-we-image__picture" alt="Image">
 					</div>
 					<div class="who-are-we__body body-who-are-we">
-						<h2 data-da=".who-are-we__image, 767.98,0" class="body-who-are-we__title title">Хто ми?</h2>
+						<h2 data-watch data-watch-once data-watch-margin="-200px" data-da=".who-are-we__image, 767.98,0" class="body-who-are-we__title title"><span>Хто ми?</span></h2>
 						<p class="body-who-are-we__text">
 							<span>
 								Ми – команда DARUI, яка знає, як зробити Ваші зимові свята особливими.
@@ -146,11 +154,164 @@
 			</section>
 			<section class="page__download download">
 				<div class="download__container">
-					<h2 class="download__title title title--center">А ви готові до свят?</h2>
+					<h2 data-watch data-watch-once data-watch-margin="-200px" class="download__title title title--center"><span>А ви готові до свят?</span>
+					</h2>
 					<p class="download__text">завантажуйте наш каталог <br> та обирайте подарунки</p>
-					<a href="#" class="download__button button">Завантажити каталог</a>
+					<a href="#" data-popup="#popup" class="download__button button">Завантажити каталог</a>
 				</div>
 			</section>
+			<div class="page__reviews reviews">
+				<div class="reviews__container">
+					<h2 data-watch data-watch-once data-watch-margin="-200px" class="reviews__title title"><span>Відгуки наших клієнтів</span></h2>
+					<div class="reviews__body">
+						<div class="reviews-slider__actions">
+							<button type="button" class="reviews-slider-prev swiper-button-prev">
+								<img src="img/icons/arrow-slider.svg" alt="Image">
+							</button>
+							<button type="button" class="reviews-slider-next swiper-button-next">
+								<img src="img/icons/arrow-slider.svg" alt="Image">
+							</button>
+						</div>
+						<div class="reviews__slider reviews-slider swiper">
+							<div class="reviews-slider__wrapper swiper-wrapper">
+								<div class="reviews-slider__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__header">
+										<div class="slide-reviews__image">
+											<img src="img/reviews/01.webp" class="slide-reviews__picture" alt="Image">
+										</div>
+										<div class="slide-reviews__name">Анна <br> HR-менеджер</div>
+									</div>
+									<p class="slide-reviews__text">
+										Ми замовляли подарункові набори від DARUI для всього нашого колективу на новорічні свята, і всі залишилися в захваті!
+										Упаковка надзвичайно красива, а солодощі – просто неймовірні. Особливо сподобалась можливість брендування коробок під
+										наш корпоративний стиль. Обов'язково співпрацюватимемо з DARUI і наступного року!
+									</p>
+								</div>
+								<div class="reviews-slider__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__header">
+										<div class="slide-reviews__image">
+											<img src="img/reviews/02.webp" class="slide-reviews__picture" alt="Image">
+										</div>
+										<div class="slide-reviews__name">Іван <br>
+											Комерційний директор</div>
+									</div>
+									<p class="slide-reviews__text">
+										DARUI – наш надійний партнер. Ми отримали подарункові набори для продажу в нашій торговій точці, і вони розійшлися дуже
+										швидко! Покупці оцінили не лише якість солодощів, але й естетичний дизайн коробок. Доставка була швидкою, а сервіс – на
+										найвищому рівні. Рекомендуємо!
+									</p>
+								</div>
+								<div class="reviews-slider__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__header">
+										<div class="slide-reviews__image">
+											<img src="img/reviews/03.webp" class="slide-reviews__picture" alt="Image">
+										</div>
+										<div class="slide-reviews__name">Софія <br>
+											Кервіник відділу збуту</div>
+									</div>
+									<p class="slide-reviews__text">
+										Замовляли великі партії новорічних подарунків для наших корпоративних клієнтів у DARUI. Все було на вищому рівні – від
+										професійного підходу до дизайну до своєчасної доставки. Наші клієнти були вражені якістю подарунків. DARUI допомогли
+										зробити наше свято ще більш незабутнім!
+									</p>
+								</div>
+								<div class="reviews-slider__slide slide-reviews swiper-slide">
+									<div class="slide-reviews__header">
+										<div class="slide-reviews__image">
+											<img src="img/reviews/01.webp" class="slide-reviews__picture" alt="Image">
+										</div>
+										<div class="slide-reviews__name">Анна <br> HR-менеджер</div>
+									</div>
+									<p class="slide-reviews__text">
+										Ми замовляли подарункові набори від DARUI для всього нашого колективу на новорічні свята, і всі залишилися в захваті!
+										Упаковка надзвичайно красива, а солодощі – просто неймовірні. Особливо сподобалась можливість брендування коробок під
+										наш корпоративний стиль. Обов'язково співпрацюватимемо з DARUI і наступного року!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="popup" aria-hidden="true" class="popup">
+				<div class="popup__wrapper">
+					<div class="popup__content">
+						<button data-close type="button" class="popup__close">
+							<svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M17.5 1.99976L2 17.1217" stroke="#4C1946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+								<path d="M2 1.99976L17.5 17.1217" stroke="#4C1946" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+							</svg>
+						</button>
+						<form class="popup__form form-popup" action="files/sendmail/sendmail.php" method="POST">
+							<input type="text" name="form[text]" placeholder="Ім’я" class="form-popup__input input">
+							<input type="tel" name="form[tel]" placeholder="Телефон" class="form-popup__input input">
+							<button type="submit" class="form-popup__button button">Завантажити</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="snowflakes" aria-hidden="true">
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+				<div class="snowflake">
+					<div class="inner">
+						<img src="img/icons/snowflake.svg" alt="Image">
+					</div>
+				</div>
+			</div>
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -206,12 +367,12 @@
 							</a>
 						</div>
 					</div>
-					<a href="#" class="footer__button button">Завантажити каталог</a>
+					<a href="#" data-popup="#popup" class="footer__button button">Завантажити каталог</a>
 				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240923234203"></script>
+	<script src="js/app.min.js?_v=20240924150916"></script>
 </body>
 
 </html>
